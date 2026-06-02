@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divine Salon & Spa | Best Salon in Rawalpindi | Premium Luxury Experience</title>
+    
+    <meta name="description" content="Experience premium luxury at Divine Salon & Spa in Rawalpindi. Offering world-class Hair, Bridal Makeup, and Spa Services. 208 verified 5-star reviews.">
+    <meta name="keywords" content="Best Salon in Rawalpindi, Beauty Salon Rawalpindi, Bridal Makeup Rawalpindi, Hair Salon Rawalpindi, Spa Services Rawalpindi, Divine Salon & Spa">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --gold-hover: #F3E5AB;
+            --black: #111111;
+            --dark-gray: #1a1a1a;
+            --white: #FFFFFF;
+            --cream: #F8F3EC;
+            --footer-bg: #0A0A0A;
+            --text-light: #E0E0E0;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--white);
+            color: var(--black);
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3, h4, h5, .navbar-brand {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .section-padding {
+            padding: 100px 0;
+        }
+        .bg-cream {
+            background-color: var(--cream);
+        }
+        .bg-dark-luxury {
+            background-color: var(--black);
+            color: var(--white);
+        }
+        .text-gold {
+            color: var(--gold) !important;
+        }
+        
+        .btn-gold {
+            background-color: var(--gold);
+            color: var(--black);
+            font-weight: 600;
+            padding: 12px 30px;
+            border-radius: 0;
+            border: 1px solid var(--gold);
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+        .btn-gold:hover {
+            background-color: transparent;
+            color: var(--gold);
+            border-color: var(--gold);
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+        }
+
+        .btn-outline-gold {
+            background-color: transparent;
+            color: var(--gold);
+            font-weight: 600;
+            padding: 12px 30px;
+            border-radius: 0;
+            border: 1px solid var(--gold);
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+        .btn-outline-gold:hover {
+            background-color: var(--gold);
+            color: var(--black);
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .section-title h2 {
+            font-size: 3rem;
+            position: relative;
+            padding-bottom: 15px;
+            display: inline-block;
+        }
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 20px;
+            border-bottom: 2px solid var(--gold);
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: rgba(17, 17, 17, 0.95);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+            transition: all 0.4s ease;
+            padding: 15px 0;
+        }
+        .navbar-brand {
+            font-size: 1.8rem;
+            color: var(--white) !important;
+        }
+        .navbar-brand span {
+            color: var(--gold);
+        }
+        .nav-link {
+            color: var(--white) !important;
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin: 0 10px;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: var(--gold) !important;
+        }
+        
+        /* Hero Section */
+        #home {
+            height: 100vh;
+            background: linear-gradient(rgba(17, 17, 17, 0.65), rgba(17, 17, 17, 0.65)), url('https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1920&auto=format&fit=crop') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            padding-top: 80px;
+        }
+        #home h1 {
+            font-size: 4.5rem;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+        #home p {
+            font-size: 1.3rem;
+            font-weight: 300;
+            margin-bottom: 40px;
+            letter-spacing: 3px;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+        }
+
+        /* About Section */
+        .about-img {
+            border: 10px solid var(--cream);
+            outline: 1px solid var(--gold);
+            position: relative;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        /* Why Choose Us */
+        .feature-card {
+            background-color: var(--white);
+            padding: 40px 30px;
+            border: 1px solid rgba(0,0,0,0.05);
+            text-align: center;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            height: 100%;
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--gold);
+            box-shadow: 0 20px 40px rgba(212, 175, 55, 0.15);
+        }
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover .feature-icon {
+            transform: scale(1.15);
+        }
+
+        /* Services Section */
+        .nav-tabs {
+            border-bottom: 2px solid var(--cream);
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+        .nav-tabs .nav-link {
+            color: var(--black) !important;
+            border: none;
+            padding: 12px 25px;
+            font-weight: 600;
+        }
+        .nav-tabs .nav-link.active {
+            background-color: transparent;
+            color: var(--gold) !important;
+            border-bottom: 3px solid var(--gold);
+        }
+        .service-card {
+            background: var(--white);
+            border: 1px solid rgba(0,0,0,0.05);
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            height: 100%;
+        }
+        .service-card:hover {
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            transform: translateY(-5px);
+            border-color: var(--gold);
+        }
+        .service-img-wrapper {
+            position: relative;
+            height: 240px;
+            overflow: hidden;
+        }
+        .service-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+        .service-card:hover .service-img-wrapper img {
+            transform: scale(1.1);
+        }
+
+        /* Statistics */
+        .stat-box {
+            text-align: center;
+            padding: 30px;
+        }
+        .stat-number {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: 5px;
+        }
+        .stat-title {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Gallery Section */
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 24px;
+            height: 300px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(17, 17, 17, 0.85);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: all 0.4s ease;
+            padding: 20px;
+        }
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Customer Reviews */
+        .review-card {
+            background-color: var(--cream);
+            padding: 40px;
+            border-left: 4px solid var(--gold);
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+        .review-card:hover {
+            transform: scale(1.03);
+        }
+        .star-rating {
+            color: var(--gold);
+            margin-bottom: 15px;
+        }
+
+        /* 9. VISUALLY ATTRACTIVE LUXURY OFFERS (FIXED READABILITY & IMAGES ADDED) */
+        .offer-card {
+            position: relative;
+            height: 480px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 35px 30px;
+            z-index: 1;
+            transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        
+        /* Background Image Layer */
+        .offer-bg-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            z-index: -2;
+            transition: transform 0.7s ease;
+        }
+        
+        /* Dark Cinematic Overlay for absolute crisp readability */
+        .offer-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(17, 17, 17, 0.4) 0%, rgba(10, 10, 10, 0.85) 50%, rgba(0, 0, 0, 0.98) 100%);
+            z-index: -1;
+            transition: background 0.4s ease;
+        }
+        
+        /* Hover Effects */
+        .offer-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--gold);
+            box-shadow: 0 20px 40px rgba(212, 175, 55, 0.25);
+        }
+        .offer-card:hover .offer-bg-img {
+            transform: scale(1.08);
+        }
+        .offer-card:hover::before {
+            background: linear-gradient(to bottom, rgba(17, 17, 17, 0.2) 0%, rgba(10, 10, 10, 0.75) 40%, rgba(0, 0, 0, 0.95) 100%);
+        }
+
+        .offer-badge {
+            background: var(--gold);
+            color: var(--black);
+            padding: 6px 16px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            align-self: flex-start;
+            margin-bottom: auto; /* Pushes content down, badge stays top */
+        }
+        
+        .offer-card h3 {
+            font-size: 2rem;
+            color: var(--white);
+            margin-bottom: 12px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        /* 100% Crisp & Visible Description Text */
+        .offer-card .offer-desc {
+            color: #F0F0F0 !important;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            font-weight: 400;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+        }
+
+        /* FAQ Accordion */
+        .accordion-item {
+            background-color: transparent;
+            border: 1px solid rgba(0,0,0,0.08);
+            margin-bottom: 15px;
+            border-radius: 0 !important;
+        }
+        .accordion-button {
+            background-color: transparent;
+            color: var(--black);
+            font-weight: 600;
+            padding: 20px;
+            font-size: 1.1rem;
+        }
+        .accordion-button:not(.collapsed) {
+            background-color: var(--cream);
+            color: var(--gold);
+            box-shadow: none;
+        }
+
+        /* Contact Section */
+        .contact-info-box {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+        .contact-info-icon {
+            font-size: 1.5rem;
+            color: var(--gold);
+            margin-right: 20px;
+            margin-top: 5px;
+        }
+        .form-control {
+            background-color: var(--cream);
+            border: 1px solid transparent;
+            border-radius: 0;
+            padding: 15px;
+        }
+        .form-control:focus {
+            background-color: var(--white);
+            border-color: var(--gold);
+            box-shadow: none;
+        }
+        .map-container {
+            width: 100%;
+            height: 350px;
+            border: 0;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: var(--footer-bg);
+            color: var(--text-light);
+            padding: 90px 0 30px;
+            border-top: 2px solid var(--gold);
+        }
+        .footer-logo {
+            font-size: 2.5rem;
+            color: var(--white);
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+        .footer-logo span {
+            color: var(--gold);
+        }
+        .footer-about-text {
+            color: #C0C0C0;
+            line-height: 1.8;
+            font-size: 0.95rem;
+        }
+        .footer-links h4, .footer-contact h4 {
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            position: relative;
+        }
+        .footer-links h4::after, .footer-contact h4::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 35px;
+            height: 20px;
+            border-bottom: 2px solid var(--gold);
+        }
+        .footer-links ul li {
+            margin-bottom: 14px;
+        }
+        .footer-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+            display: inline-block;
+        }
+        .footer-links a:hover {
+            color: var(--gold);
+            transform: translateX(5px);
+        }
+        
+        .footer-contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        .footer-contact-icon {
+            color: var(--gold);
+            font-size: 1.2rem;
+            margin-right: 15px;
+            margin-top: 3px;
+        }
+        .footer-contact-text {
+            color: var(--white);
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1.6;
+        }
+        .footer-contact-text a {
+            color: var(--white);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .footer-contact-text a:hover {
+            color: var(--gold);
+        }
+
+        .social-icons a {
+            color: var(--white);
+            background: rgba(255,255,255,0.07);
+            width: 42px;
+            height: 42px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-right: 12px;
+            transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        .social-icons a:hover {
+            background: var(--gold);
+            color: var(--black);
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+        }
+
+        /* Floating Widgets */
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+        .floating-whatsapp:hover {
+            transform: scale(1.1);
+            color: white;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 105px;
+            right: 35px;
+            background-color: var(--gold);
+            color: var(--black);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s;
+            border: none;
+        }
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        @media (max-width: 991px) {
+            #home h1 { font-size: 3rem; }
+            .section-padding { padding: 60px 0; }
+            .section-title h2 { font-size: 2.2rem; }
+            .navbar-collapse {
+                background: var(--black);
+                padding: 20px;
+                margin-top: 15px;
+            }
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">DIVINE<span>.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#offers">Offers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <a href="#contact" class="btn btn-gold ms-lg-3">Book Appointment</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <h1 class="animate__animated animate__fadeInDown">Enhance Your Beauty at Divine Salon & Spa</h1>
+                    <p class="animate__animated animate__fadeInUp animate__delay-1s">PREMIUM HAIR, MAKEUP, BEAUTY & SPA SERVICES IN RAWALPINDI</p>
+                    <div class="animate__animated animate__fadeInUp animate__delay-2s">
+                        <a href="#contact" class="btn btn-gold me-3 m-2">Book Appointment</a>
+                        <a href="tel:03356647018" class="btn btn-outline-gold m-2"><i class="fas fa-phone-alt me-2"></i>Call Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+                    <div class="about-img">
+                        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=800&auto=format&fit=crop" alt="Luxury Salon Environment" class="img-fluid w-100">
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-lg-5" data-aos="fade-left">
+                    <div class="section-title text-start mb-4">
+                        <h2 class="fs-1">Divine Salon & Spa</h2>
+                    </div>
+                    <p class="lead">Step into a world of elegance, rejuvenation, and unmatched premium luxury hospitality.</p>
+                    <p class="text-muted">Located exclusively within the Airport Housing Society in Rawalpindi, Divine Salon & Spa provides highly stylized haircutting, globally trending bridal makeovers, therapeutic skin treatments, and soothing holistic spa sessions tailored for sophisticated individuals.</p>
+                    <div class="row pt-2">
+                        <div class="col-sm-6 mb-3"><p class="mb-0 fw-semibold"><i class="fas fa-check text-gold me-2"></i> Professional Beauty Experts</p></div>
+                        <div class="col-sm-6 mb-3"><p class="mb-0 fw-semibold"><i class="fas fa-check text-gold me-2"></i> Luxury Salon Environment</p></div>
+                        <div class="col-sm-6 mb-3"><p class="mb-0 fw-semibold"><i class="fas fa-check text-gold me-2"></i> Premium Safe Products</p></div>
+                        <div class="col-sm-6 mb-3"><p class="mb-0 fw-semibold"><i class="fas fa-check text-gold me-2"></i> 100% Client Satisfaction</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-cream">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Why Choose Us</h2>
+                <p class="text-muted">Indulge in high-end cosmetic treatment frameworks curated completely around you.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card">
+                        <i class="fas fa-user-tie feature-icon"></i>
+                        <h4>Professional Staff</h4>
+                        <p class="text-muted mb-0">Our specialists complete elite certification and training frameworks continuously.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card">
+                        <i class="fas fa-crown feature-icon"></i>
+                        <h4>Premium Products</h4>
+                        <p class="text-muted mb-0">We use authentic world-renowned luxury brands to treat your skin and hair beautifully.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card">
+                        <i class="fas fa-gem feature-icon"></i>
+                        <h4>Luxury Experience</h4>
+                        <p class="text-muted mb-0">Unwind inside premium individual care lounges optimized for maximum relaxation.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card">
+                        <i class="fas fa-star-half-alt feature-icon"></i>
+                        <h4>208 Five-Star Reviews</h4>
+                        <p class="text-muted mb-0">Recognized consistently for maintaining an unblemished trace of structural perfection.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card">
+                        <i class="fas fa-pump-medical feature-icon"></i>
+                        <h4>Hygienic Environment</h4>
+                        <p class="text-muted mb-0">Medical-grade sterilization processes practiced meticulously daily across clinical apparatus.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card">
+                        <i class="fas fa-smile feature-icon"></i>
+                        <h4>Customer Satisfaction</h4>
+                        <p class="text-muted mb-0">Your explicit lifestyle visions transformed seamlessly into breathtaking reality options.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section-padding">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Our Premium Services</h2>
+                <p class="text-muted">Explore our curated array of premier wellness and beauty procedures.</p>
+            </div>
+
+            <ul class="nav nav-tabs" id="serviceTabs" role="tablist" data-aos="fade-up">
+                <li class="nav-item">
+                    <button class="nav-link active" id="hair-tab" data-bs-toggle="tab" data-bs-target="#hair" type="button" role="tab">Hair</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" id="beauty-tab" data-bs-toggle="tab" data-bs-target="#beauty" type="button" role="tab">Makeup & Beauty</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" id="spa-tab" data-bs-toggle="tab" data-bs-target="#spa" type="button" role="tab">Spa Therapy</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" id="nails-tab" data-bs-toggle="tab" data-bs-target="#nails" type="button" role="tab">Nail Artistry</button>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="serviceTabsContent" data-aos="fade-up" data-aos-delay="100">
+                <div class="tab-pane fade show active" id="hair" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-3">
+                            <div class="service-card">
+                                <div class="service-img-wrapper"><img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=500" alt="Hair Cut"></div>
+                                <div class="p-4"><h4>Hair Cut</h4><p class="text-muted">Precision couture styling shaped uniquely to match face structures.</p><a href="#contact" class="btn btn-outline-gold btn-sm w-100 mt-2">Book Now</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="service-card">
+                                <div class="service-img-wrapper"><img src="https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?q=80&w=500" alt="Hair Styling"></div>
+                                <div class="p-4"><h4>Hair Styling</h4><p class="text-muted">High-profile editorial blowouts designed for premium galas.</p><a href="#contact" class="btn btn-outline-gold btn-sm w-100 mt-2">Book Now</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="service-card">
+                                <div class="service-img-wrapper"><img src="asset/haircolour.png" alt="Hair Coloring"></div>
+                                <div class="p-4"><h4>Hair Coloring</h4><p class="text-muted">Masterful dimensional balayages paired beautifully with organic safe lighteners.</p><a href="#contact" class="btn btn-outline-gold btn-sm w-100 mt-2">Book Now</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="service-card">
+                                <div class="service-img-wrapper"><img src="asset/hairteatment.png" alt="Hair Treatment"></div>
+                                <div class="p-4"><h4>Hair Treatment</h4><p class="text-muted">Deep protein bond rebuilders engineered thoroughly to revitalize hair.</p><a href="#contact" class="btn btn-outline-gold btn-sm w-100 mt-2">Book Now</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="beauty" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-3">
+                            <div class="service-card">
+                                <div class="service-img-wrapper"><img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=500" alt="Premium Makeup"></div>
+                                <div class="p-4"><h4>Glam Makeup</h4><p class="text-muted">Airbrushed HD complexion finishes calibrated precisely for evening galas.</p><a href="#contact" class="btn btn-outline-gold btn-sm w-100 mt-2">Book Now</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="service-card">
+                                <div class="service-img-wrapper"><img src="asset/bridal.png" alt="Bridal Makeup"></div>
+                                <div class="p-4"><h4>Bridal Makeover</h4><p class="text-muted">Breathtakingly classical royalty packages focused on camera-ready longevity.</p><a href="#contact" class="btn btn-outline-gold btn-sm w-100 mt-2">Book Now</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="service-card">
+                                <div class="service-img-wrapper"><img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=500" alt="Party Makeup"></div>
+                                <div class="p-4"><h4>Party Makeup</h4><p class="text-muted">Chic express color-correct application tailored gracefully for social events.</p><a href="#contact" class="btn btn-outline-gold btn-sm w-100 mt-2">Book Now</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="service-card">
+                                <div class="service-img-wrapper"><img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=500" alt="Facial Treatments"></div>
+                                <div class="p-4"><h4>Facial Therapy</h4><p class="text-muted">Ultra-purifying botanical enzyme extractions aimed at maximizing skin radiance.</p><a href="#contact" class="btn btn-outline-gold btn-sm w-100 mt-2">Book Now</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="spa" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="service-card">
+                                <div class="service-img-wrapper"><img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=500" alt="Spa Therapy"></div>
+                                <div class="p-4"><h4>Spa Therapy</h4><p class="text-muted">Complete sensory isolation setups enhanced with warm plant aromatics.</p><a href="#contact" class="btn btn-outline-gold btn-sm w-100 mt-2">Book Now</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="service-card">
+                                <div class="service-img-wrapper"><img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=500" alt="Massage"></div>
+                                <div class="p-4"><h4>Deep Tissue Massage</h4><p class="text-muted">Anatomical trigger point techniques to melt muscular strain patterns away.</p><a href="#contact" class="btn btn-outline-gold btn-sm w-100 mt-2">Book Now</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="service-card">
+                                <div class="service-img-wrapper"><img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=500" alt="Skin Care"></div>
+                                <div class="p-4"><h4>Advanced Skin Care</h4><p class="text-muted">Clinical micro-exfoliation protocols focused strictly on skin rejuvenation.</p><a href="#contact" class="btn btn-outline-gold btn-sm w-100 mt-2">Book Now</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="nails" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="service-card">
+                                <div class="service-img-wrapper"><img src="asset/meni.png" alt="Manicure"></div>
+                                <div class="p-4"><h4>Luxury Manicure</h4><p class="text-muted">Mineral-infused hand exfoliation combined with cuticle enrichment.</p><a href="#contact" class="btn btn-outline-gold btn-sm w-100 mt-2">Book Now</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="service-card">
+                                <div class="service-img-wrapper"><img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?q=80&w=500" alt="Pedicure"></div>
+                                <div class="p-4"><h4>Detox Pedicure</h4><p class="text-muted">Soothing herbal bath therapies created elegantly to revive tired feet.</p><a href="#contact" class="btn btn-outline-gold btn-sm w-100 mt-2">Book Now</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="service-card">
+                                <div class="service-img-wrapper"><img src="asset/painting.png" alt="Nail Art"></div>
+                                <div class="p-4"><h4>Couture Nail Art</h4><p class="text-muted">Hand-drawn fine metallic filigrees layered expertly over custom gel bases.</p><a href="#contact" class="btn btn-outline-gold btn-sm w-100 mt-2">Book Now</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-dark-luxury">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3 col-6">
+                    <div class="stat-box">
+                        <div class="stat-number" data-target="208">0</div>
+                        <div class="stat-title">5-Star Reviews</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-box">
+                        <div class="stat-number" data-target="1000">0</div>
+                        <div class="stat-title">Happy Clients</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-box">
+                        <div class="stat-number" data-target="15">0</div>
+                        <div class="stat-title">Master Experts</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-box">
+                        <div class="stat-number" data-target="45">0</div>
+                        <div class="stat-title">Premium Services</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section-padding">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Our Lookbook</h2>
+                <p class="text-muted">A visual testimony showcasing pristine luxury physical transformations.</p>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=600" alt="Editorial Hair Styling">
+                        <div class="gallery-overlay">
+                            <h4 class="text-white">Hair Artistry</h4>
+                            <p class="text-gold">Precision Balance</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="gallery-item">
+                        <img src="asset/bridaln.png" alt="Royal Bridal Makeover">
+                        <div class="gallery-overlay">
+                            <h4 class="text-white">Bridal Glow</h4>
+                            <p class="text-gold">Couture Makeover</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=600" alt="Divine Luxury Salon Interior">
+                        <div class="gallery-overlay">
+                            <h4 class="text-white">Luxury Lounge</h4>
+                            <p class="text-gold">Pristine Architecture</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=600" alt="Calming Hydrotherapy Spa">
+                        <div class="gallery-overlay">
+                            <h4 class="text-white">Spa Escapes</h4>
+                            <p class="text-gold">Holistic Healing</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=600" alt="Clinical Anti Aging Facial">
+                        <div class="gallery-overlay">
+                            <h4 class="text-white">Dermal Therapy</h4>
+                            <p class="text-gold">Radiance Extraction</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="gallery-item">
+                        <img src="asset/Capture.png" alt="Luxury Intricate Gel Nails">
+                        <div class="gallery-overlay">
+                            <h4 class="text-white">Fine Nails</h4>
+                            <p class="text-gold">Metallic Detailing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="section-padding bg-cream">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>208 Verified 5-Star Reviews</h2>
+                <p class="text-muted">Read authentic unedited experiences left by our esteemed client base.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="review-card">
+                        <div class="star-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="fst-italic">"Divine Salon did my complete wedding presentation seamlessly. The signature bridal glow lasted brilliantly through heavy photography spotlights without creasing."</p>
+                        <h5 class="mb-0 mt-3">— Ayesha K.</h5>
+                        <small class="text-muted">Verified Client</small>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="review-card">
+                        <div class="star-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="fst-italic">"The absolute finest precision haircut experience in Rawalpindi. The architectural staff handles consultation sessions thoroughly before picking up scissors."</p>
+                        <h5 class="mb-0 mt-3">— Maria T.</h5>
+                        <small class="text-muted">Verified Client</small>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="review-card">
+                        <div class="star-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="fst-italic">"Their aromatherapy deep relaxation massage represents exceptional quality standard. Complete private sanctuary environment where stress completely vanishes."</p>
+                        <h5 class="mb-0 mt-3">— Sana Ahmed</h5>
+                        <small class="text-muted">Verified Client</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="offers" class="section-padding bg-dark-luxury">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2 class="text-white">Exclusive Luxury Packages</h2>
+                <p class="text-muted">Unlock curated cosmetic bundles engineered around premier pricing tiers.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="offer-card shadow">
+                        <div class="offer-bg-img" style="background-image: url('asset/bridal.png');"></div>
+                        <span class="offer-badge">Royal Bridal</span>
+                        <h3>Bridal Couture Edition</h3>
+                        <p class="offer-desc">Signature HD makeup, high-end customized hair setting, veil drape styling, and pre-wedding botanical facial prep.</p>
+                        <a href="#contact" class="btn btn-gold w-100">Reserve Package</a>
+                    </div>
+                </div>
+                
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="offer-card shadow">
+                        <div class="offer-bg-img" style="background-image: url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=600&auto=format&fit=crop');"></div>
+                        <span class="offer-badge">Sensory Oasis</span>
+                        <h3>Divine Day Spa Bundle</h3>
+                        <p class="offer-desc">Full-body hot micro-stone aromatherapy massage, microdermabrasion cellular facial, and mineralizing milk-infused foot bath.</p>
+                        <a href="#contact" class="btn btn-gold w-100">Reserve Package</a>
+                    </div>
+                </div>
+                
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="offer-card shadow">
+                        <div class="offer-bg-img" style="background-image: url('https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=600&auto=format&fit=crop');"></div>
+                        <span class="offer-badge">Seasonal Glam</span>
+                        <h3>Prism Color & Cut</h3>
+                        <p class="offer-desc">Dimensional hand-painted balayage lighting highlights, structural texture haircut, and deep keratin protective gloss lock.</p>
+                        <a href="#contact" class="btn btn-gold w-100">Reserve Package</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Frequently Asked Questions</h2>
+                <p class="text-muted">Answering essential inquiries concerning operational processes and expectations.</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Do I need to book bridal packages far in advance?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Yes. Due to exceptionally high request volume for luxury weekend transformations, we highly encourage reserving critical wedding dates 4 to 8 weeks in advance to guarantee master artist slot availability.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Which global product ranges do you explicitly utilize?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    We rely strictly on globally vetted dermatological lines, premium hair bond builders, and couture cosmetic choices to defend structural skin integrity completely.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    What hygiene measures are practiced at the facility?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    We maintain medical-grade sanitization protocols. All physical utensils go through deep liquid chemical micro-bacterial subversion baths alongside autoclave processing units prior to clinical client surface applications.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding bg-cream">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Schedule Your Visit</h2>
+                <p class="text-muted">Submit your target calendar dates or walk straight inside our luxury physical architecture.</p>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="bg-white p-4 h-100 border">
+                        <h3 class="mb-4">Contact Information</h3>
+                        
+                        <div class="contact-info-box">
+                            <i class="fas fa-map-marker-alt contact-info-icon"></i>
+                            <div>
+                                <h5>Salon Address</h5>
+                                <p class="text-muted mb-0">H#56, Main 2 Iqbal Road, Sector 2 Airport Housing Society, Rawalpindi 48000, Pakistan</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-box">
+                            <i class="fas fa-phone-alt contact-info-icon"></i>
+                            <div>
+                                <h5>Phone Hotline</h5>
+                                <p class="text-muted mb-0">03356647018</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-box">
+                            <i class="fas fa-clock contact-info-icon"></i>
+                            <div>
+                                <h5>Operational Hours</h5>
+                                <p class="text-muted mb-0">Monday – Sunday: 11:00 AM – 9:00 PM</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex gap-2 mt-4">
+                            <a href="tel:03356647018" class="btn btn-gold flex-grow-1"><i class="fas fa-phone me-2"></i>Call Now</a>
+                            <a href="https://wa.me/923356647018" target="_blank" class="btn btn-success rounded-0 px-4 flex-grow-1" style="background-color: #25D366; border: none;"><i class="fab fa-whatsapp me-2"></i>WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7" data-aos="fade-left">
+                    <div class="bg-white p-4 border">
+                        <form id="appointmentForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label small fw-bold">Full Name *</label>
+                                    <input type="text" class="form-control" required placeholder="e.g. Maria Khan">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label small fw-bold">Phone Number *</label>
+                                    <input type="tel" class="form-control" required placeholder="e.g. 03356647018">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label small fw-bold">Target Treatment Area</label>
+                                    <select class="form-select form-control">
+                                        <option>Hair Styling / Cut</option>
+                                        <option>Bridal Makeover</option>
+                                        <option>Luxury Facial Care</option>
+                                        <option>Sensory Spa Session</option>
+                                        <option>Nail Artistry</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label small fw-bold">Preferred Date</label>
+                                    <input type="date" class="form-control">
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label small fw-bold">Special Requests</label>
+                                    <textarea class="form-control" rows="4" placeholder="Let us know any skin specific sensitivities or requests..."></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-gold w-100 py-3">Submit Booking Application</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5" data-aos="fade-up">
+                <div class="col-12">
+                    <iframe class="map-container border shadow-sm" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.0469446864147!2d73.12056587630739!3d33.52613324548483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfed707a77b83d%3A0x63eb39b83b380c55!2sAirport%20Housing%20Society%2C%20Rawalpindi%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1710000000000!5m2!1sen!2s" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-up">
+                    <h3 class="footer-logo">DIVINE<span>.</span></h3>
+                    <p class="footer-about-text">A premier high-end beauty destination combining progressive aesthetic art forms with calming luxury holistic hospitality frameworks inside Rawalpindi.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 ps-lg-5 footer-links" data-aos="fade-up" data-aos-delay="100">
+                    <h4 class="text-gold">Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#home">Home Base</a></li>
+                        <li><a href="#about">About Our Philosophy</a></li>
+                        <li><a href="#services">Treatment Portfolios</a></li>
+                        <li><a href="#gallery">Visual Lookbook</a></li>
+                        <li><a href="#reviews">Client Testimonials</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 footer-contact" data-aos="fade-up" data-aos-delay="200">
+                    <h4 class="text-gold">Contact Details</h4>
+                    
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone-alt footer-contact-icon"></i>
+                        <div class="footer-contact-text">
+                            <strong>Phone:</strong><br>
+                            <a href="tel:03356647018">03356647018</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope footer-contact-icon"></i>
+                        <div class="footer-contact-text">
+                            <strong>Email:</strong><br>
+                            <a href="mailto:concierge@divinesalonspa.com">concierge@divinesalonspa.com</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt footer-contact-icon"></i>
+                        <div class="footer-contact-text">
+                            <strong>Address:</strong><br>
+                            H#56, Main 2 Iqbal Road, Sector 2 Airport Housing Society, Rawalpindi, Pakistan
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="border-secondary mt-5 mb-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="text-muted mb-0">© 2026 Divine Salon & Spa. All Sovereign Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end text-gold">
+                    <p class="mb-0 fw-semibold">Designed elegantly for ultra-luxury experiences.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/923356647018" target="_blank" class="floating-whatsapp" title="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <button id="backToTop" class="back-to-top" title="Return to Top Space">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 120
+        });
+
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            const backToTop = document.getElementById('backToTop');
+            
+            if (window.scrollY > 50) {
+                navbar.style.padding = '10px 0';
+                navbar.style.backgroundColor = '#111111';
+            } else {
+                navbar.style.padding = '15px 0';
+                navbar.style.backgroundColor = 'rgba(17, 17, 17, 0.95)';
+            }
+
+            if (window.scrollY > 400) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        });
+
+        document.getElementById('backToTop').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        const counters = document.querySelectorAll('.stat-number');
+        const speed = 200;
+
+        const startCounters = () => {
+            counters.forEach(counter => {
+                const animate = () => {
+                    const value = +counter.getAttribute('data-target');
+                    const data = +counter.innerText;
+                    const time = value / speed;
+                    if(data < value) {
+                        counter.innerText = Math.ceil(data + time);
+                        setTimeout(animate, 15);
+                    } else {
+                        counter.innerText = value + "+";
+                    }
+                }
+                animate();
+            });
+        }
+
+        let observerOptions = {
+            root: null,
+            threshold: 0.4
+        };
+
+        let observer = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    startCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        observer.observe(document.querySelector('.bg-dark-luxury'));
+
+        document.getElementById('appointmentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for choosing Divine Salon & Spa! Our concierge desk will contact you via phone shortly to secure your booking.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
